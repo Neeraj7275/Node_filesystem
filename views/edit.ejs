@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main h-screen w-full bg-zinc-900 flex">
+        <div class="prt1 p-5">
+            <a class="text-blue-600" href="/">Go To Home Page</a>
+            <form action="/update" method="post">
+                <input class="title w-3/4 rounded-md px-5 py-2 bg-zinc-600 mt-5" type="text" placeholder="previousname" name="previousname" value="<%=filename%>">
+                <input class="title w-3/4 rounded-md px-5 py-2 bg-zinc-600 mt-5" type="text" placeholder="new filename" name="newname">
+                <input class="px-5 py-2 bg-yellow-600 rounded-md mt-5 min-w-32 text-white" type="submit" value="update filename">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
